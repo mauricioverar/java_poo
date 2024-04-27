@@ -15,7 +15,9 @@ public class Main {
         persona = persona.crearPersona();
         persona.respira();
 
-        System.out.println(OBJ + persona.nombre+" es "+persona.etario()+" de edad");
+        System.out.println(OBJ + persona.nombre + " es " + persona.etario() + " de edad");
+        
+        System.out.println("Edad es " + persona.par());
 
         // mostrar resultado
         System.out.println(persona.toString());

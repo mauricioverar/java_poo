@@ -64,13 +64,15 @@ public class Persona {
     public String toString() {
         //RAZA = "et"; // constante raza no puede ser reasignada
         planeta = "Tierra"; // variable puede ser modificada
-        return "Planeta: " + planeta + " - Raza: " + RAZA + " - [nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", numTelefono="
-                + numTelefono + ", pais=" + pais + "]";
+        return "Planeta:" + planeta + " - Raza:" + RAZA + "\n [Nombre:" + nombre + "\tApellido:" + apellido + "\tEdad:" + edad + "\t\'Num\\Telefono\':"
+                + numTelefono + "\tPais:" + pais + "]";
+        // \" para incluir comillas, \\ para incluir backslash, \n salto de linea, \t tabulación
+        // \b retroceso, \r retorno de carro
     }
 
     // metodos vacio
     public void respira() {
-        System.out.println("Soy persona y respiro");
+        System.out.println("\"Soy persona y respiro\"");
     }
 
     // metodos (acciones)
@@ -80,6 +82,15 @@ public class Persona {
         } else {
             return "menor";
         }
+    }
+
+    // usando modulo
+    public String par() {
+        int resto = edad % 2; // si otro nº en vez de 2, el resto sería el residuo
+        if (resto == 0) {
+            return "par";
+        } else
+            return "impar";
     }
 
 }
