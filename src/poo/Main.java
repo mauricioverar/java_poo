@@ -4,6 +4,8 @@
 package poo;
 
 public class Main {
+
+    final static String OBJ = "Individuo "; // constante debe ir en mayus, con valor, con static, con final y sobre el método main
     public static void main(String[] args) {
 
         // instanciar a la clase Persona y construir objeto
@@ -13,7 +15,7 @@ public class Main {
         persona = persona.crearPersona();
         persona.respira();
 
-        System.out.println(persona.nombre+" es "+persona.etario()+" de edad");
+        System.out.println(OBJ + persona.nombre+" es "+persona.etario()+" de edad");
 
         // mostrar resultado
         System.out.println(persona.toString());
